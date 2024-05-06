@@ -1,22 +1,25 @@
 version: '3'
 
 services:
-  app:
-    image: xed
+  web:
+    image: xed_web:v1
+    container_name: xed_web
     build: 
-      context: .
+      context: ./app
+      dockerfile: Dockerfile
+
     environment:
-      - WATCHPACK_POLLING=true
-      - CHOKIDAR_USEPOLLING=true
+      # To reload app on windows
+      WATCHPACK_POLLING: true
+      CHOKIDAR_USEPOLLING: true
+    restart: always
+
+    env_file: .env
+
     volumes:
-      - ./src:/app/src
-      - ./public:/app/public
-      - ./amplify:/app/amplify
+      - ./app/src:/app/src
+      - ./app/public:/app/public
+      - ./app/node_modules:/app/node_modules
+
     ports:
-      - '3000:3000'
-    
-# Define a network, which allows containers to communicate
-# with each other, by using their container name as a hostname
-# networks:
-#   my_network:
-#     external: true
+      - 3000:3000

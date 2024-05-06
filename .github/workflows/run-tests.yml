@@ -1,0 +1,15 @@
+name: Run Tests
+
+on: [pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: oven-sh/setup-bun@v1
+      - name: bun install
+        run: cd app && bun i
+      - name: lint
+        run: cd app && bun lint
