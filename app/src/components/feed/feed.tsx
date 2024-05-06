@@ -47,7 +47,7 @@ const Feed: FC = ({ data, id }) => {
   ])
 
   const hashtags: Array<string> = [
-    'xed', 'ufc295', 'nba2k',
+    'kou', 'ufc295', 'nba2k',
     'halloween', 'november', 'elonmusk',
     'nextjs', 'mongodb', 'rubyonrails',
     'philippines', 'flutter', 'hunterxhunter',

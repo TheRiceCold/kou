@@ -40,7 +40,7 @@ const Header: FC<IProps> = ({ leftContent }) => (
       items-center 
       justify-between
     ">
-      <Link href='/'>Xed</Link>
+      <Link href='/'>Kou</Link>
     </div>
     <Dialog>
       <DialogTrigger asChild>

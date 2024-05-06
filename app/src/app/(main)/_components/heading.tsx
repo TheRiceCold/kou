@@ -11,11 +11,11 @@ const Heading = () => {
         <span className='underline'>Xed</span>
       </h1>
       <h3 className='text-base sm:text-xl md:text-2xl font-medium'>
-        Xed is the connected workspace where <br/>
+        Kou is the connected workspace where <br/>
         better, faster work happens.
       </h3>
       <Button>
-        Enter Xed
+        Enter Kou
         <ArrowRight className='h-4 w-4 ml-2'/>
       </Button>
     </div>

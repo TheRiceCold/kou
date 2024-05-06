@@ -6,21 +6,21 @@ A Social Media Web App Project. View live production [here]()
 
 ### 1. Clone Repository
 ```
-git clone https://github.com/kaizen-dw/xed-web
+git clone https://github.com/thericecold/kou
 ```
 
 ### 2. Choose your setup
 Option 1 Prerequesites: Local Environment Setup
-- [Bun](https://bun.sh) >= 1.0.14
-- [Act](https://github.com/nektos/act) >= 0.2.54
+- [Bun] >= 1.1.6
+- [Act] >= 0.2.54
 
 Install and run development server on `http://localhost:3000`
 ```
-bun i && bun dev
+cd app; bun i; bun dev
 ```
 
 Option 2 Prerequesites: Containerized Setup
-- [Docker](https://docs.docker.com/engine/install) or (alternative) [Podman](https://podman.io) & [Podman Compose](https://podman.io) >= 1.06
+- [Docker] or (alternative) [Podman] & [Podman Compose][podman-compose] >= 1.1.0
 
 Build image and run container
 ```
@@ -28,8 +28,8 @@ docker-compose up # podman-compose up (if your using podman)
 ```
 
 Option 3 Prerequesites: Nix Shell/Flake Setup
-- [Nix Package Manager](https://nixos.org/download)
-- (Optional) [Direnv](https://direnv.net/docs/installation.html)
+- [Nix Package Manager][nix]
+- (Optional) [Direnv]
 
 If you have `direnv` installed
 ```
@@ -38,7 +38,7 @@ direnv allow
 ```
 Install and run development server on `http://localhost:3000`
 ```
-bun i && bun dev
+cd app; bun i; bun dev
 ```
 <!-- END: Getting Started -->
 
@@ -54,3 +54,12 @@ Test a github action workflow locally
 act -j <job-name>
 ```
 <!-- END: Test Commands -->
+
+<!-- Links -->
+[bun]: https://bun.sh
+[podman]: https://podman.io
+[podman-compose]: https://podman.io
+[docker]: https://docs.docker.com/engine/install
+[direnv]: https://direnv.net/docs/installation.html
+[act]: https://github.com/nektos/act
+[nix]: https://nixos.org/download

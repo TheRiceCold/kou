@@ -8,7 +8,7 @@ import { appleAppStore, googlePlayStore } from '@/constants/images'
 
 const GetAppDialog = () => (
   <Dialog 
-    title='Get Xed App'
+    title='Get Kou App'
     description='Download and install our application'
     triggerComponent={() => (
       <Button variant='outline' className='h-8'>

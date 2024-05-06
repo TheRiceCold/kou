@@ -32,7 +32,7 @@ const Sidebar: FC = () => (
         hover:underline
         text-muted-foreground
       ">
-        Xed, Inc. ©2023 All rights reserved
+        Kou, Inc. ©2023 All rights reserved
       </span>
   </aside>
 )
